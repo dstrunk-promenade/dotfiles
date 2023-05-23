@@ -1,0 +1,11 @@
+bartender
+figma
+iterm2
+lastpass
+obsidian
+omnifocus
+orbstack
+phpstorm
+raycast
+spectacle
+tableplus
