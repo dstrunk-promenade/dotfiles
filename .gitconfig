@@ -1,0 +1,27 @@
+[init]
+  templatedir = ~/.git_template
+  defaultBranch = main
+[push]
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = false
+  editor = vim
+  filemode = false
+  eol = LF
+[merge]
+  ff = only
+  conflictstyle = merge
+[commit]
+  template = ~/.gitmessage
+  gpgsign = true
+[fetch]
+  prune = true
+[include]
+  path = ~/.gitconfig.local
+[gpg]
+  program = gpg
+[diff]
+  renamelimit = 5000
+[hooks]
+  status = 1
