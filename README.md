@@ -13,6 +13,7 @@ New computer is pretty straightforward. Using iCloud Desktop, things are even si
 1. `ssh-keygen -t ed25519 -C {your-email@example.com}`, import this into GitHub
 1. Export PGP key from previous computer, import into new computer. For information on this step, see <https://www.phildev.net/pgp/gpg_moving_keys.html>.
 1. Export TablePlus connections from previous computer, import into new computer.
+1. Install `nvm`: https://github.com/nvm-sh/nvm#installing-and-updating
 
 ## Manual steps
 
@@ -29,6 +30,8 @@ New computer is pretty straightforward. Using iCloud Desktop, things are even si
     1. Install `Templater`
 
 ## Troubleshooting
-### `gpg: signing failed: Inappropriate ioctl for device`
+## `gpg: signing failed: Inappropriate ioctl for device`
 
-Run `export GPG_TTY=$(tty)`
+This may happen when signing git commits. To fix, add the following to your `~/.zshrc` file:
+
+`export GPG_TTY=$(tty)`
