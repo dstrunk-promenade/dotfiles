@@ -1,10 +1,12 @@
 tap "homebrew/bundle"
+tap "homebrew/services"
 brew "docker"
 brew "docker-compose"
 brew "fzf"
 brew "gh"
 brew "git"
 brew "gnupg"
+brew "php", restart_service: true
 brew "ripgrep"
 cask "bartender"
 cask "cleanshot"
